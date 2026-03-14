@@ -1,0 +1,104 @@
+/* ═══════════════════════════════════════════════════════════
+   DRISHYAM MEDIA — Blog Page Styles
+   Loaded by: blog.html
+   Shared base styles live in css/main.css
+═══════════════════════════════════════════════════════════ */
+
+
+/* ─────────────────────────────────────────
+   HERO
+───────────────────────────────────────── */
+.blog-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 140px 48px 100px;
+  text-align: center;
+}
+.blog-hero::before {
+  content: ''; position: absolute; inset: 0; z-index: 0;
+  background: radial-gradient(ellipse 90% 70% at 50% 0%,
+    #2a1060 0%, #1a0838 35%, #0d0520 65%, #060008 100%);
+}
+.blog-hero::after {
+  content: ''; position: absolute; inset: 0; z-index: 0;
+  background: radial-gradient(ellipse 60% 50% at 50% 0%,
+    rgba(155,40,255,0.22) 0%, transparent 70%);
+}
+.blog-hero .grain {
+  position: absolute; inset: 0; z-index: 1; opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 200px; pointer-events: none;
+}
+.blog-hero-content {
+  position: relative; z-index: 10;
+  max-width: 900px; margin: 0 auto;
+}
+.blog-hero h1 {
+  font-size: clamp(48px, 7vw, 88px);
+  font-weight: 900;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  margin-bottom: 24px;
+}
+.blog-hero p {
+  font-size: clamp(16px, 1.8vw, 19px);
+  line-height: 1.7;
+  color: var(--white-muted);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .blog-hero { padding: 100px 24px 70px; }
+}
+
+
+/* ─────────────────────────────────────────
+   COMING SOON
+───────────────────────────────────────── */
+.coming-soon {
+  padding: 100px 48px 120px;
+  text-align: center;
+}
+.coming-soon-card {
+  max-width: 560px;
+  margin: 0 auto;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 24px;
+  padding: 64px 48px;
+}
+.coming-soon-icon {
+  font-size: 60px;
+  margin-bottom: 28px;
+}
+.coming-soon h2 {
+  font-size: clamp(24px, 3vw, 36px);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+.coming-soon p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--white-muted);
+  margin-bottom: 36px;
+}
+.coming-soon .btn-cta {
+  display: inline-block;
+  background: #fff;
+  color: #1a0a2e;
+  font-family: 'Manrope', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 14px 36px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.15s;
+}
+.coming-soon .btn-cta:hover { background: #ffe0f0; transform: translateY(-1px); }
+
+@media (max-width: 768px) {
+  .coming-soon { padding: 60px 24px 80px; }
+  .coming-soon-card { padding: 40px 24px; }
+}

@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -ExecutionPolicy Bypass -File fix_about.ps1)",
+      "Bash(rm fix_about.ps1)",
+      "Bash(powershell -ExecutionPolicy Bypass -File \"c:\\\\Users\\\\Abhishek\\\\Downloads\\\\Chrome Work Download\\\\Drishyam Website\\\\fix_contact.ps1\")",
+      "Bash(powershell -ExecutionPolicy Bypass -File \"c:\\\\Users\\\\Abhishek\\\\Downloads\\\\Chrome Work Download\\\\Drishyam Website\\\\fix_graphic2.ps1\")"
+    ]
+  }
+}

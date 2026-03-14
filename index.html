@@ -1,0 +1,732 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Drishyam Media — Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/pages/index.css"/>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════
+     HERO WRAPPER — gradient background spans behind both the nav and hero
+══════════════════════════════════════ -->
+<div class="hero-wrapper">
+
+<!-- ══════════════════════════════════════ NAV ══════════════════════════════════════ -->
+<nav class="site-nav" role="navigation" aria-label="Main navigation">
+  <a href="index.html" class="nav-logo">Drishyam<sup>®</sup></a>
+
+  <div class="nav-tabs" role="tablist">
+    <a href="index.html"   class="nav-tab active" role="tab" aria-selected="true">Home</a>
+
+    <div class="nav-dropdown" role="none">
+      <button class="nav-tab nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+        Portfolio
+        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="nav-dropdown-menu" role="menu">
+        <div class="nav-dropdown-menu-inner">
+          <a href="#" class="nav-dropdown-item" role="menuitem">Video Production</a>
+          <a href="graphic.html" class="nav-dropdown-item" role="menuitem">Graphic Designing</a>
+          <a href="#" class="nav-dropdown-item" role="menuitem">Web/App Development</a>
+        </div>
+      </div>
+    </div>
+
+    <a href="about.html"   class="nav-tab" role="tab">About</a>
+    <a href="reviews.html" class="nav-tab" role="tab">Reviews</a>
+    <a href="pricing.html" class="nav-tab" role="tab">Pricing</a>
+    <a href="blog.html"    class="nav-tab" role="tab">Blog</a>
+    <a href="contact.html" class="nav-tab" role="tab">Contact</a>
+  </div>
+
+  <div class="nav-right">
+    <a href="contact.html" class="btn-book">Book a Call</a>
+  </div>
+
+  <button class="nav-hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<!-- Mobile drawer -->
+<div class="mobile-nav-drawer" id="mobileDrawer" role="dialog" aria-modal="true">
+  <button class="drawer-close" id="drawerClose" aria-label="Close navigation menu">×</button>
+  <a href="index.html">Home</a>
+  <a href="#" class="drawer-group-label">Portfolio</a>
+  <a href="#" class="drawer-sub-item">Video Production</a>
+  <a href="#" class="drawer-sub-item">Graphic Designing</a>
+  <a href="#" class="drawer-sub-item">Website / App Development</a>
+  <a href="pricing.html">Services</a>
+  <a href="about.html">About</a>
+  <a href="reviews.html">Reviews</a>
+  <a href="blog.html">Blog</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="drawer-cta">Book a Call</a>
+</div>
+
+
+<!-- background layers — position:absolute relative to .hero-wrapper,
+     so the gradient covers both the nav and the hero section -->
+<div class="bg-layer" aria-hidden="true"></div>
+<div class="bg-grain" aria-hidden="true"></div>
+
+<!-- ══════════════════════════════════════
+     HERO
+══════════════════════════════════════ -->
+<div class="hero-wrap">
+
+  <div class="hero-content">
+    <h1 class="hero-headline">
+      <span class="line-white">Supercharge Your Brand With</span><br>
+      <span class="line-pink">Viral Signature Clips.</span>
+    </h1>
+    <p class="hero-sub">
+      If you’re a busy creator/business with no time to create, edit or post consistently on social media but still recognize the need to grow your brand faster, then we are for you.
+    </p>
+    <a href="#" class="hero-cta">Get Started</a>
+  </div>
+
+  <div class="card-strip-wrap" aria-hidden="true">
+    <div class="card-strip" id="strip">
+      <!-- Set A -->
+      <div class="card"><div class="card-inner"></div><div class="card-label">Alex Rivera</div></div>
+      <div class="card"><div class="card-inner"></div><div class="card-label">Studio Noir</div></div>
+      <div class="card"><div class="card-inner"></div><div class="card-label">Dr. Maya</div></div>
+      <div class="card"><div class="card-inner"></div><div class="card-label">Lena Chen</div></div>
+      <div class="card"><div class="card-inner"></div><div class="card-label">Bold Collective</div></div>
+      <div class="card"><div class="card-inner"></div><div class="card-label">Marcus Law</div></div>
+      <div class="card"><div class="card-inner"></div><div class="card-label">Craft & Co.</div></div>
+      <div class="card"><div class="card-inner"></div><div class="card-label">Sofia Park</div></div>
+      <!-- Set B (seamless duplicate) -->
+      <div class="card"><div class="card-inner"></div><div class="card-label">Alex Rivera</div></div>
+      <div class="card"><div class="card-inner"></div><div class="card-label">Studio Noir</div></div>
+      <div class="card"><div class="card-inner"></div><div class="card-label">Dr. Maya</div></div>
+      <div class="card"><div class="card-inner"></div><div class="card-label">Lena Chen</div></div>
+      <div class="card"><div class="card-inner"></div><div class="card-label">Bold Collective</div></div>
+      <div class="card"><div class="card-inner"></div><div class="card-label">Marcus Law</div></div>
+      <div class="card"><div class="card-inner"></div><div class="card-label">Craft & Co.</div></div>
+      <div class="card"><div class="card-inner"></div><div class="card-label">Sofia Park</div></div>
+    </div>
+  </div>
+</div><!-- end .hero-wrap -->
+
+</div><!-- end .hero-wrapper -->
+
+
+<!-- ══════════════════════════════════════
+     ATTENTION TO ACQUISITION
+══════════════════════════════════════ -->
+<section class="ata-section" aria-label="Our Process">
+
+  <div class="ata-header">
+    <h2 class="ata-title">
+      <span class="ata-white">From </span><span class="ata-pink">Attention</span><span class="ata-white"> To </span><span class="ata-purple">Acquisition</span>
+    </h2>
+    <p class="ata-sub">
+      We started by helping creators go viral. Now, we help brands and experts
+      grow predictably through systems that combine authentic storytelling,
+      branding, and automation.
+    </p>
+  </div>
+
+  <div class="timeline-wrap" aria-hidden="true">
+    <div class="timeline-line">
+      <div class="timeline-line-fill" id="timelineFill"></div>
+    </div>
+    <div class="timeline-nodes" id="timelineNodes">
+      <div class="timeline-node"><div class="node-circle" data-step="0">1</div></div>
+      <div class="timeline-node"><div class="node-circle" data-step="1">2</div></div>
+      <div class="timeline-node"><div class="node-circle" data-step="2">3</div></div>
+      <div class="timeline-node"><div class="node-circle" data-step="3">4</div></div>
+    </div>
+  </div>
+
+  <div class="step-cards" id="stepCards" role="list">
+
+    <div class="step-card" data-step="0" role="listitem">
+      <div class="step-icon-wrap" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M10 9l5 3-5 3V9z"/></svg>
+      </div>
+      <h3 class="step-name">Capture</h3>
+      <p class="step-desc">One studio session. Months of content. We extract your story in just a few hours.</p>
+      <div class="card-progress" aria-hidden="true"><div class="card-progress-fill"></div></div>
+    </div>
+
+    <div class="step-card" data-step="1" role="listitem">
+      <div class="step-icon-wrap" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/><path d="M15 5l3 3"/></svg>
+      </div>
+      <h3 class="step-name">Create</h3>
+      <p class="step-desc">Our team transforms raw footage into scroll-stopping, branded short-form content.</p>
+      <div class="card-progress" aria-hidden="true"><div class="card-progress-fill"></div></div>
+    </div>
+
+    <div class="step-card" data-step="2" role="listitem">
+      <div class="step-icon-wrap" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5l-1-4 7.5-7.5 4 4-7.5 7.5-3.5-1z"/><path d="M14 6l4 4"/><circle cx="19" cy="5" r="2"/></svg>
+      </div>
+      <h3 class="step-name">Distribute</h3>
+      <p class="step-desc">Strategic posting across platforms with optimized timing and hashtag strategies.</p>
+      <div class="card-progress" aria-hidden="true"><div class="card-progress-fill"></div></div>
+    </div>
+
+    <div class="step-card" data-step="3" role="listitem">
+      <div class="step-icon-wrap" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+      </div>
+      <h3 class="step-name">Convert</h3>
+      <p class="step-desc">Automated DM systems turn engaged viewers into qualified leads and bookings.</p>
+      <div class="card-progress" aria-hidden="true"><div class="card-progress-fill"></div></div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     WE'VE WORKED WITH
+══════════════════════════════════════ -->
+<section class="wwf-section" aria-label="Clients we've worked with">
+  <div class="wwf-bg" aria-hidden="true"></div>
+
+  <h2 class="wwf-title">We've Worked <span class="wwf-grad">With</span></h2>
+
+  <div class="wwf-track-wrap" aria-hidden="true">
+    <div class="wwf-track" id="wwfTrack">
+      <!-- SET A -->
+      <div class="wwf-card" style="--rot:-6deg; --img:linear-gradient(160deg,#0d0a2e,#2a0a50)"><div class="wwf-img"><div class="wwf-card-inner"></div></div><span class="wwf-card-name">Arjun Mehta</span></div>
+      <div class="wwf-card" style="--rot:5deg;  --img:linear-gradient(160deg,#1a0520,#4a0a3a)"><div class="wwf-img"><div class="wwf-card-inner"></div></div><span class="wwf-card-name">Priya Kapoor</span></div>
+      <div class="wwf-card" style="--rot:-4deg; --img:linear-gradient(160deg,#200010,#500020)"><div class="wwf-img"><div class="wwf-card-inner"></div></div><span class="wwf-card-name">Rohan Sharma</span></div>
+      <div class="wwf-card" style="--rot:7deg;  --img:linear-gradient(160deg,#100020,#380040)"><div class="wwf-img"><div class="wwf-card-inner"></div></div><span class="wwf-card-name">Sneha Iyer</span></div>
+      <div class="wwf-card" style="--rot:-5deg; --img:linear-gradient(160deg,#280010,#500018)"><div class="wwf-img"><div class="wwf-card-inner"></div></div><span class="wwf-card-name">Vikram Nair</span></div>
+      <div class="wwf-card" style="--rot:4deg;  --img:linear-gradient(160deg,#0a0820,#2a1060)"><div class="wwf-img"><div class="wwf-card-inner"></div></div><span class="wwf-card-name">Ananya Rao</span></div>
+      <div class="wwf-card" style="--rot:-7deg; --img:linear-gradient(160deg,#1e0010,#480020)"><div class="wwf-img"><div class="wwf-card-inner"></div></div><span class="wwf-card-name">Karan Malhotra</span></div>
+      <div class="wwf-card" style="--rot:6deg;  --img:linear-gradient(160deg,#0d0030,#300050)"><div class="wwf-img"><div class="wwf-card-inner"></div></div><span class="wwf-card-name">Divya Singh</span></div>
+      <div class="wwf-card" style="--rot:-3deg; --img:linear-gradient(160deg,#200018,#4a0030)"><div class="wwf-img"><div class="wwf-card-inner"></div></div><span class="wwf-card-name">Rahul Verma</span></div>
+      <div class="wwf-card" style="--rot:5deg;  --img:linear-gradient(160deg,#140028,#3a0048)"><div class="wwf-img"><div class="wwf-card-inner"></div></div><span class="wwf-card-name">Meera Joshi</span></div>
+      <!-- SET B (seamless duplicate) -->
+      <div class="wwf-card" style="--rot:-6deg; --img:linear-gradient(160deg,#0d0a2e,#2a0a50)"><div class="wwf-img"><div class="wwf-card-inner"></div></div><span class="wwf-card-name">Arjun Mehta</span></div>
+      <div class="wwf-card" style="--rot:5deg;  --img:linear-gradient(160deg,#1a0520,#4a0a3a)"><div class="wwf-img"><div class="wwf-card-inner"></div></div><span class="wwf-card-name">Priya Kapoor</span></div>
+      <div class="wwf-card" style="--rot:-4deg; --img:linear-gradient(160deg,#200010,#500020)"><div class="wwf-img"><div class="wwf-card-inner"></div></div><span class="wwf-card-name">Rohan Sharma</span></div>
+      <div class="wwf-card" style="--rot:7deg;  --img:linear-gradient(160deg,#100020,#380040)"><div class="wwf-img"><div class="wwf-card-inner"></div></div><span class="wwf-card-name">Sneha Iyer</span></div>
+      <div class="wwf-card" style="--rot:-5deg; --img:linear-gradient(160deg,#280010,#500018)"><div class="wwf-img"><div class="wwf-card-inner"></div></div><span class="wwf-card-name">Vikram Nair</span></div>
+      <div class="wwf-card" style="--rot:4deg;  --img:linear-gradient(160deg,#0a0820,#2a1060)"><div class="wwf-img"><div class="wwf-card-inner"></div></div><span class="wwf-card-name">Ananya Rao</span></div>
+      <div class="wwf-card" style="--rot:-7deg; --img:linear-gradient(160deg,#1e0010,#480020)"><div class="wwf-img"><div class="wwf-card-inner"></div></div><span class="wwf-card-name">Karan Malhotra</span></div>
+      <div class="wwf-card" style="--rot:6deg;  --img:linear-gradient(160deg,#0d0030,#300050)"><div class="wwf-img"><div class="wwf-card-inner"></div></div><span class="wwf-card-name">Divya Singh</span></div>
+      <div class="wwf-card" style="--rot:-3deg; --img:linear-gradient(160deg,#200018,#4a0030)"><div class="wwf-img"><div class="wwf-card-inner"></div></div><span class="wwf-card-name">Rahul Verma</span></div>
+      <div class="wwf-card" style="--rot:5deg;  --img:linear-gradient(160deg,#140028,#3a0048)"><div class="wwf-img"><div class="wwf-card-inner"></div></div><span class="wwf-card-name">Meera Joshi</span></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     DESIGN THAT SPEAKS
+══════════════════════════════════════ -->
+<section class="dts-section" aria-label="Design Portfolio">
+  <div class="dts-header">
+    <h2 class="dts-title">Design That Speaks for <span class="dts-grad">Your Brand</span></h2>
+    <p class="dts-sub">From scroll-stopping thumbnails to engaging posts and reel covers,<br>we craft visuals that make your content impossible to ignore.</p>
+  </div>
+
+  <!--
+    GALLERY IMAGE GUIDE
+    Row 1 slots  (fill src="" with your images):
+      g-169 → 16:9 image  |  g-916 → 9:16 image  |  g-11 → 1:1 image
+    Row 2 slots are separate — add a different set of 9 images there.
+    Each row has its 9 images duplicated below for the seamless scroll loop.
+  -->
+  <div class="gallery-wrap">
+
+    <!-- ── ROW 1 — scrolls left ── -->
+    <div class="gallery-row">
+      <div class="gallery-track">
+
+        <!-- original 9 images -->
+        <div class="g-item g-169"><img src="assets/images/index/designthatspeak169 (1).webp"   alt="YouTube Thumbnail"  loading="lazy"><div class="dts-tag">YouTube Thumbnail</div></div>
+        <div class="g-item g-916"><img src="assets/images/index/designthatspeak916 (1).webp"   alt="Reel Cover"         loading="lazy"><div class="dts-tag">Reel Cover</div></div>
+        <div class="g-item g-11" ><img src="assets/images/index/designthatspeak11 (1).webp"   alt="LinkedIn Post"      loading="lazy"><div class="dts-tag">LinkedIn Post</div></div>
+        <div class="g-item g-169"><img src="assets/images/index/designthatspeak169 (2).webp"  alt="Campaign Visual"    loading="lazy"><div class="dts-tag">Campaign Visual</div></div>
+        <div class="g-item g-11" ><img src="assets/images/index/designthatspeak11 (2).webp"  alt="Brand Post"         loading="lazy"><div class="dts-tag">Brand Post</div></div>
+        <div class="g-item g-916"><img src="assets/images/index/designthatspeak916 (2).webp"   alt="Speaker Card"       loading="lazy"><div class="dts-tag">Speaker Card</div></div>
+        <div class="g-item g-169"><img src="assets/images/index/designthatspeak169 (3).webp"   alt="Thumbnail Design"   loading="lazy"><div class="dts-tag">Thumbnail Design</div></div>
+        <div class="g-item g-916"><img src="assets/images/index/designthatspeak916 (3).webp"     alt="Reel Cover"         loading="lazy"><div class="dts-tag">Reel Cover</div></div>
+        <div class="g-item g-11" ><img src="assets/images/index/designthatspeak11 (3).webp"   alt="Event Poster"       loading="lazy"><div class="dts-tag">Event Poster</div></div>
+
+        <!-- duplicate set for seamless loop -->
+        <div class="g-item g-169" aria-hidden="true"><img src="assets/images/index/designthatspeak169 (1).webp"   alt="" loading="lazy"></div>
+        <div class="g-item g-916" aria-hidden="true"><img src="assets/images/index/designthatspeak916 (1).webp"   alt="" loading="lazy"></div>
+        <div class="g-item g-11"  aria-hidden="true"><img src="assets/images/index/designthatspeak11 (1).webp"   alt="" loading="lazy"></div>
+        <div class="g-item g-169" aria-hidden="true"><img src="assets/images/index/designthatspeak169 (2).webp"  alt="" loading="lazy"></div>
+        <div class="g-item g-11"  aria-hidden="true"><img src="assets/images/index/designthatspeak11 (2).webp"  alt="" loading="lazy"></div>
+        <div class="g-item g-916" aria-hidden="true"><img src="assets/images/index/designthatspeak916 (2).webp"   alt="" loading="lazy"></div>
+        <div class="g-item g-169" aria-hidden="true"><img src="assets/images/index/designthatspeak169 (3).webp"   alt="" loading="lazy"></div>
+        <div class="g-item g-916" aria-hidden="true"><img src="assets/images/index/designthatspeak916 (3).webp"     alt="" loading="lazy"></div>
+        <div class="g-item g-11"  aria-hidden="true"><img src="assets/images/index/designthatspeak11 (3).webp"   alt="" loading="lazy"></div>
+
+      </div>
+    </div>
+
+    <!-- ── ROW 2 — scrolls right, add your 9 images here ── -->
+    <div class="gallery-row">
+      <div class="gallery-track gallery-track-r2">
+
+        <!-- original 9 images — replace src="" with your image paths -->
+        <div class="g-item g-11" ><img src="assets/images/index/designthatspeak11 (4).webp" alt="Design Work" loading="lazy"><div class="dts-tag">Design Work</div></div>
+        <div class="g-item g-169"><img src="assets/images/index/designthatspeak169 (4).webp" alt="Design Work" loading="lazy"><div class="dts-tag">Design Work</div></div>
+        <div class="g-item g-916"><img src="assets/images/index/designthatspeak916 (4).webp" alt="Design Work" loading="lazy"><div class="dts-tag">Design Work</div></div>
+        <div class="g-item g-169"><img src="assets/images/index/designthatspeak169 (5).webp" alt="Design Work" loading="lazy"><div class="dts-tag">Design Work</div></div>
+        <div class="g-item g-916"><img src="assets/images/index/designthatspeak916 (5).webp" alt="Design Work" loading="lazy"><div class="dts-tag">Design Work</div></div>
+        <div class="g-item g-11" ><img src="assets/images/index/designthatspeak11 (5).webp" alt="Design Work" loading="lazy"><div class="dts-tag">Design Work</div></div>
+        <div class="g-item g-916"><img src="assets/images/index/designthatspeak916 (6).png" alt="Design Work" loading="lazy"><div class="dts-tag">Design Work</div></div>
+        <div class="g-item g-11" ><img src="assets/images/index/designthatspeak11 (6).webp" alt="Design Work" loading="lazy"><div class="dts-tag">Design Work</div></div>
+        <div class="g-item g-169"><img src="assets/images/index/designthatspeak169 (6).webp" alt="Design Work" loading="lazy"><div class="dts-tag">Design Work</div></div>
+
+        <!-- duplicate set for seamless loop -->
+        <div class="g-item g-11"  aria-hidden="true"><img src="assets/images/index/designthatspeak11 (4).webp" alt="" loading="lazy"></div>
+        <div class="g-item g-169" aria-hidden="true"><img src="assets/images/index/designthatspeak169 (4).webp" alt="" loading="lazy"></div>
+        <div class="g-item g-916" aria-hidden="true"><img src="assets/images/index/designthatspeak916 (4).webp" alt="" loading="lazy"></div>
+        <div class="g-item g-169" aria-hidden="true"><img src="assets/images/index/designthatspeak169 (5).webp" alt="" loading="lazy"></div>
+        <div class="g-item g-916" aria-hidden="true"><img src="assets/images/index/designthatspeak916 (5).webp" alt="" loading="lazy"></div>
+        <div class="g-item g-11"  aria-hidden="true"><img src="assets/images/index/designthatspeak11 (5).webp" alt="" loading="lazy"></div>
+        <div class="g-item g-916" aria-hidden="true"><img src="assets/images/index/designthatspeak916 (6).png" alt="" loading="lazy"></div>
+        <div class="g-item g-11"  aria-hidden="true"><img src="assets/images/index/designthatspeak11 (6).webp" alt="" loading="lazy"></div>
+        <div class="g-item g-169" aria-hidden="true"><img src="assets/images/index/designthatspeak169 (6).webp" alt="" loading="lazy"></div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="dts-footer">
+    <a href="#" class="dts-discover-btn">
+      Discover More
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M1 8h14M9 2l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     WEBSITE SHOWCASE
+══════════════════════════════════════ -->
+<section class="ws-section" aria-label="Website Showcase">
+
+  <div class="ws-bg" aria-hidden="true">
+    <div class="ws-blob ws-blob-l"></div>
+    <div class="ws-blob ws-blob-r"></div>
+  </div>
+
+  <div class="ws-header">
+    <h2 class="ws-title">Websites That Speak <span class="ws-grad">Your Brand</span></h2>
+    <p class="ws-sub">From conversion-focused landing pages to full e-commerce stores,<br>we build websites that look stunning and perform even better.</p>
+  </div>
+
+  <div class="ws-tabs" role="tablist" id="wsTabs">
+    <button class="ws-tab active" data-cat="ecommerce" role="tab" aria-selected="true">E-Commerce</button>
+    <button class="ws-tab" data-cat="portfolio" role="tab" aria-selected="false">Portfolio</button>
+    <button class="ws-tab" data-cat="landing" role="tab" aria-selected="false">Landing Pages</button>
+    <button class="ws-tab" data-cat="saas" role="tab" aria-selected="false">SaaS / Dashboards</button>
+  </div>
+
+  <div class="ws-frame-wrap">
+    <div class="ws-browser" role="region" aria-label="Website preview">
+      <div class="ws-browser-bar" aria-hidden="true">
+        <div class="ws-dots">
+          <span style="background:#ff5f57"></span>
+          <span style="background:#febc2e"></span>
+          <span style="background:#28c840"></span>
+        </div>
+        <div class="ws-url-bar">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+          <span id="wsUrl">yourstore.com</span>
+        </div>
+        <div class="ws-nav-icons" aria-hidden="true">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+        </div>
+      </div>
+
+      <div class="ws-screen" id="wsScreen">
+        <!-- E-Commerce -->
+        <div class="ws-panel active" data-cat="ecommerce" role="tabpanel">
+          <div class="ws-mock-nav" aria-hidden="true"><div class="ws-mock-logo"></div><div class="ws-mock-links"><span></span><span></span><span></span></div><div class="ws-mock-cta"></div></div>
+          <div class="ws-mock-hero" style="background:linear-gradient(135deg,#1a0838 0%,#2d0a5a 50%,#0d0020 100%)" aria-hidden="true">
+            <div class="ws-mock-hero-text"><div style="width:55%;height:14px;background:#fff;border-radius:4px;margin-bottom:10px;opacity:0.9"></div><div style="width:40%;height:10px;background:rgba(255,255,255,0.4);border-radius:4px;margin-bottom:18px"></div><div style="width:100px;height:32px;background:linear-gradient(90deg,#4b3fff,#d4007a);border-radius:8px"></div></div>
+            <div class="ws-mock-hero-img"></div>
+          </div>
+          <div class="ws-mock-products" aria-hidden="true">
+            <div class="ws-mock-section-title"></div>
+            <div class="ws-mock-grid">
+              <div class="ws-mock-product"><div class="ws-mock-product-img" style="background:linear-gradient(160deg,#2a0a50,#5a0a80)"></div><div class="ws-mock-product-info"><div></div><div></div></div></div>
+              <div class="ws-mock-product"><div class="ws-mock-product-img" style="background:linear-gradient(160deg,#3d0060,#8000a0)"></div><div class="ws-mock-product-info"><div></div><div></div></div></div>
+              <div class="ws-mock-product"><div class="ws-mock-product-img" style="background:linear-gradient(160deg,#500020,#c00050)"></div><div class="ws-mock-product-info"><div></div><div></div></div></div>
+              <div class="ws-mock-product"><div class="ws-mock-product-img" style="background:linear-gradient(160deg,#1a0050,#4b3fff)"></div><div class="ws-mock-product-info"><div></div><div></div></div></div>
+            </div>
+          </div>
+          <div class="ws-mock-testimonials" aria-hidden="true">
+            <div class="ws-mock-section-title" style="width:120px"></div>
+            <div class="ws-mock-reviews">
+              <div class="ws-mock-review"><div class="ws-stars"></div><div></div><div></div></div>
+              <div class="ws-mock-review"><div class="ws-stars"></div><div></div><div></div></div>
+              <div class="ws-mock-review"><div class="ws-stars"></div><div></div><div></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Portfolio -->
+        <div class="ws-panel" data-cat="portfolio" role="tabpanel">
+          <div class="ws-mock-nav" aria-hidden="true"><div class="ws-mock-logo"></div><div class="ws-mock-links"><span></span><span></span><span></span></div><div class="ws-mock-cta" style="background:linear-gradient(90deg,#d4007a,#ff3c2f)"></div></div>
+          <div class="ws-mock-hero" style="background:linear-gradient(135deg,#060510 0%,#1a0030 40%,#300010 100%)" aria-hidden="true">
+            <div class="ws-mock-hero-text" style="width:60%"><div style="width:80%;height:18px;background:linear-gradient(90deg,#9b2fff,#d4007a);border-radius:4px;margin-bottom:10px"></div><div style="width:55%;height:10px;background:rgba(255,255,255,0.3);border-radius:4px;margin-bottom:18px"></div><div style="display:flex;gap:8px"><div style="width:80px;height:28px;background:linear-gradient(90deg,#4b3fff,#9b2fff);border-radius:6px"></div><div style="width:80px;height:28px;background:rgba(255,255,255,0.08);border-radius:6px;border:1px solid rgba(255,255,255,0.15)"></div></div></div>
+          </div>
+          <div class="ws-mock-masonry" aria-hidden="true">
+            <div class="ws-mason-col"><div style="height:80px;background:linear-gradient(160deg,#1a0838,#3d0a70);border-radius:6px;margin-bottom:6px"></div><div style="height:50px;background:linear-gradient(160deg,#200010,#500030);border-radius:6px"></div></div>
+            <div class="ws-mason-col"><div style="height:50px;background:linear-gradient(160deg,#0d0020,#2a0060);border-radius:6px;margin-bottom:6px"></div><div style="height:80px;background:linear-gradient(160deg,#300010,#700030);border-radius:6px"></div></div>
+            <div class="ws-mason-col"><div style="height:70px;background:linear-gradient(160deg,#1a0028,#4a0060);border-radius:6px;margin-bottom:6px"></div><div style="height:60px;background:linear-gradient(160deg,#200018,#500030);border-radius:6px"></div></div>
+            <div class="ws-mason-col"><div style="height:55px;background:linear-gradient(160deg,#0a0820,#2a2060);border-radius:6px;margin-bottom:6px"></div><div style="height:75px;background:linear-gradient(160deg,#280010,#600020);border-radius:6px"></div></div>
+          </div>
+        </div>
+
+        <!-- Landing Page -->
+        <div class="ws-panel" data-cat="landing" role="tabpanel">
+          <div class="ws-mock-nav" aria-hidden="true"><div class="ws-mock-logo"></div><div class="ws-mock-links"><span></span><span></span></div><div class="ws-mock-cta" style="background:linear-gradient(90deg,#ff3c2f,#d4007a)"></div></div>
+          <div class="ws-mock-hero" style="background:linear-gradient(160deg,#04020e 0%,#18083a 60%,#280010 100%);text-align:center;align-items:center;justify-content:center;flex-direction:column;padding:28px 16px" aria-hidden="true">
+            <div style="width:180px;height:12px;background:linear-gradient(90deg,#4b3fff,#d4007a);border-radius:4px;margin-bottom:10px"></div>
+            <div style="width:130px;height:8px;background:rgba(255,255,255,0.25);border-radius:4px;margin-bottom:20px"></div>
+            <div style="width:110px;height:34px;background:linear-gradient(90deg,#4b3fff,#9b2fff,#d4007a);border-radius:999px;box-shadow:0 0 20px rgba(155,47,255,0.4)"></div>
+          </div>
+          <div class="ws-mock-features" aria-hidden="true">
+            <div class="ws-mock-feat"><div class="ws-feat-icon" style="background:rgba(75,63,255,0.2)"></div><div class="ws-feat-lines"><div></div><div></div></div></div>
+            <div class="ws-mock-feat"><div class="ws-feat-icon" style="background:rgba(212,0,122,0.2)"></div><div class="ws-feat-lines"><div></div><div></div></div></div>
+            <div class="ws-mock-feat"><div class="ws-feat-icon" style="background:rgba(255,60,47,0.2)"></div><div class="ws-feat-lines"><div></div><div></div></div></div>
+          </div>
+          <div class="ws-mock-social-proof" aria-hidden="true">
+            <div style="display:flex;gap:6px;justify-content:center;margin-top:10px">
+              <div style="width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,#4b3fff,#9b2fff)"></div>
+              <div style="width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,#9b2fff,#d4007a)"></div>
+              <div style="width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,#d4007a,#ff3c2f)"></div>
+              <div style="width:60px;height:28px;border-radius:4px;background:rgba(255,255,255,0.06);margin-left:4px"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SaaS Dashboard -->
+        <div class="ws-panel" data-cat="saas" role="tabpanel">
+          <div class="ws-mock-dash" aria-hidden="true">
+            <div class="ws-dash-sidebar">
+              <div style="width:28px;height:28px;border-radius:6px;background:linear-gradient(135deg,#4b3fff,#d4007a);margin-bottom:16px"></div>
+              <div style="width:100%;height:6px;background:rgba(255,255,255,0.2);border-radius:3px;margin-bottom:8px"></div>
+              <div style="width:70%;height:6px;background:rgba(255,255,255,0.1);border-radius:3px;margin-bottom:8px"></div>
+              <div style="width:80%;height:6px;background:rgba(255,255,255,0.1);border-radius:3px;margin-bottom:8px"></div>
+              <div style="width:60%;height:6px;background:linear-gradient(90deg,#4b3fff,#9b2fff);border-radius:3px;margin-bottom:8px"></div>
+              <div style="width:75%;height:6px;background:rgba(255,255,255,0.1);border-radius:3px"></div>
+            </div>
+            <div class="ws-dash-main">
+              <div class="ws-dash-stats">
+                <div class="ws-dash-stat" style="background:linear-gradient(135deg,#1a0838,#2d0a5a)"><div style="height:8px;width:70%;background:rgba(255,255,255,0.5);border-radius:2px;margin-bottom:6px"></div><div style="height:18px;width:50%;background:linear-gradient(90deg,#4b3fff,#9b2fff);border-radius:2px"></div></div>
+                <div class="ws-dash-stat" style="background:linear-gradient(135deg,#200010,#500030)"><div style="height:8px;width:70%;background:rgba(255,255,255,0.5);border-radius:2px;margin-bottom:6px"></div><div style="height:18px;width:50%;background:linear-gradient(90deg,#d4007a,#ff3c2f);border-radius:2px"></div></div>
+                <div class="ws-dash-stat" style="background:linear-gradient(135deg,#080620,#180840)"><div style="height:8px;width:70%;background:rgba(255,255,255,0.5);border-radius:2px;margin-bottom:6px"></div><div style="height:18px;width:50%;background:linear-gradient(90deg,#9b2fff,#d4007a);border-radius:2px"></div></div>
+              </div>
+              <div class="ws-dash-chart">
+                <svg width="100%" height="70" viewBox="0 0 300 70" preserveAspectRatio="none" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="cg1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#4b3fff" stop-opacity="0.4"/><stop offset="100%" stop-color="#4b3fff" stop-opacity="0"/></linearGradient>
+                    <linearGradient id="cg2" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#4b3fff"/><stop offset="50%" stop-color="#9b2fff"/><stop offset="100%" stop-color="#d4007a"/></linearGradient>
+                  </defs>
+                  <path d="M0,60 C30,55 50,40 80,35 S130,20 160,25 S220,10 260,15 L300,10 L300,70 L0,70Z" fill="url(#cg1)"/>
+                  <path d="M0,60 C30,55 50,40 80,35 S130,20 160,25 S220,10 260,15 L300,10" fill="none" stroke="url(#cg2)" stroke-width="2.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="ws-dash-table">
+                <div class="ws-dash-row header"><span></span><span></span><span></span></div>
+                <div class="ws-dash-row"><span></span><span></span><span style="background:linear-gradient(90deg,#4b3fff,#9b2fff)"></span></div>
+                <div class="ws-dash-row"><span></span><span></span><span style="background:linear-gradient(90deg,#9b2fff,#d4007a)"></span></div>
+                <div class="ws-dash-row"><span></span><span></span><span style="background:linear-gradient(90deg,#d4007a,#ff3c2f)"></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ws-thumbs" id="wsThumbs" role="tablist" aria-label="Website type selector">
+      <div class="ws-thumb active" data-cat="ecommerce" role="tab" aria-selected="true" tabindex="0">
+        <div class="ws-thumb-preview" style="background:linear-gradient(135deg,#1a0838,#3d0a70)"></div>
+        <span>E-Commerce</span>
+      </div>
+      <div class="ws-thumb" data-cat="portfolio" role="tab" aria-selected="false" tabindex="0">
+        <div class="ws-thumb-preview" style="background:linear-gradient(135deg,#060510,#1a0030)"></div>
+        <span>Portfolio</span>
+      </div>
+      <div class="ws-thumb" data-cat="landing" role="tab" aria-selected="false" tabindex="0">
+        <div class="ws-thumb-preview" style="background:linear-gradient(135deg,#04020e,#280010)"></div>
+        <span>Landing Page</span>
+      </div>
+      <div class="ws-thumb" data-cat="saas" role="tab" aria-selected="false" tabindex="0">
+        <div class="ws-thumb-preview" style="background:linear-gradient(135deg,#080618,#1a0838)"></div>
+        <span>Dashboard</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="ws-cta-wrap">
+    <a href="#" class="ws-cta-btn">
+      Discover More
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M1 8h14M9 2l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     HOW WE HELP YOU
+══════════════════════════════════════ -->
+<section class="hwh-section" aria-label="How We Help You">
+  <div class="hwh-bg" aria-hidden="true">
+    <div class="hwh-glow-l"></div>
+    <div class="hwh-glow-r"></div>
+  </div>
+
+  <div class="hwh-header">
+    <h2 class="hwh-title">How We <span class="hwh-grad">Help You</span></h2>
+    <p class="hwh-sub">We help your brand grow with powerful designs, consistent branding,<br>and strategies that boost engagement — while saving you time and effort.</p>
+  </div>
+
+  <div class="hwh-cards">
+    <div class="hwh-card">
+      <div class="hwh-card-inner">
+        <div class="hwh-icon-wrap" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <h3 class="hwh-card-title">Grow Your Reach</h3>
+        <p class="hwh-card-desc">We design content that gets noticed, attracts followers, and builds your online presence across every platform.</p>
+        <div class="hwh-card-stat">
+          <span class="hwh-stat-num">3×</span>
+          <span class="hwh-stat-label">avg. follower growth in 90 days</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hwh-card hwh-card-center">
+      <div class="hwh-card-inner">
+        <div class="hwh-icon-wrap hwh-icon-active" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <h3 class="hwh-card-title">Boost Engagement</h3>
+        <p class="hwh-card-desc">From posts to reels, we create visuals that spark conversations, increase likes, and strengthen your community.</p>
+        <div class="hwh-card-stat">
+          <span class="hwh-stat-num">5×</span>
+          <span class="hwh-stat-label">higher engagement vs. industry avg.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hwh-card">
+      <div class="hwh-card-inner">
+        <div class="hwh-icon-wrap" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h3 class="hwh-card-title">Save Your Time</h3>
+        <p class="hwh-card-desc">We handle strategy, creation, and delivery — so you can focus on what you do best while we build your brand.</p>
+        <div class="hwh-card-stat">
+          <span class="hwh-stat-num">20+</span>
+          <span class="hwh-stat-label">hours saved per week on average</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     TESTIMONIALS
+══════════════════════════════════════ -->
+<section class="tm-section" aria-label="Client Testimonials">
+  <div class="tm-bg" aria-hidden="true">
+    <div class="tm-glow-tl"></div>
+    <div class="tm-glow-br"></div>
+  </div>
+
+  <div class="tm-header">
+    <div class="tm-eyebrow">Client Stories</div>
+    <h2 class="tm-title">Hear it directly from<br>our <span class="tm-grad">clients</span></h2>
+    <p class="tm-sub">Real results, real people. Here's what our clients say about working with us.</p>
+  </div>
+
+  <div class="tm-video-row">
+    <div class="tm-video-card">
+      <div class="tm-video-thumb" style="--c1:#0d0828;--c2:#1e0848">
+        <div class="tm-video-overlay" aria-hidden="true"></div>
+        <button class="tm-play-btn" aria-label="Play video testimonial from Scott Henry">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 3l14 9-14 9V3z"/></svg>
+        </button>
+        <div class="tm-video-duration" aria-hidden="true">1:42</div>
+      </div>
+      <div class="tm-video-body">
+        <div class="tm-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p class="tm-quote">"These guys don't mess around. We saw results from month one. If you want to grow your business, look no further."</p>
+        <div class="tm-author">
+          <div class="tm-avatar" style="background:linear-gradient(135deg,#4b3fff,#9b2fff)" aria-hidden="true">SH</div>
+          <div>
+            <div class="tm-author-name">Scott Henry</div>
+            <div class="tm-author-role">Content Creator</div>
+          </div>
+          <div class="tm-platform-tag">YouTube</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tm-video-card">
+      <div class="tm-video-thumb" style="--c1:#200010;--c2:#480020">
+        <div class="tm-video-overlay" aria-hidden="true"></div>
+        <button class="tm-play-btn" aria-label="Play video testimonial from William K.">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 3l14 9-14 9V3z"/></svg>
+        </button>
+        <div class="tm-video-duration" aria-hidden="true">2:08</div>
+      </div>
+      <div class="tm-video-body">
+        <div class="tm-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p class="tm-quote">"My results and online presence went through the roof more or less overnight. Mind-blowing what they achieved for me."</p>
+        <div class="tm-author">
+          <div class="tm-avatar" style="background:linear-gradient(135deg,#d4007a,#ff3c2f)" aria-hidden="true">WK</div>
+          <div>
+            <div class="tm-author-name">William K.</div>
+            <div class="tm-author-role">Business Coach</div>
+          </div>
+          <div class="tm-platform-tag">Instagram</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tm-quote-strip">
+    <div class="tm-quote-card">
+      <div class="tm-quote-mark" aria-hidden="true">"</div>
+      <p class="tm-quote-text">Within 60 days our engagement tripled. The content quality is on another level entirely.</p>
+      <div class="tm-quote-author">
+        <div class="tm-avatar tm-avatar-sm" style="background:linear-gradient(135deg,#9b2fff,#d4007a)" aria-hidden="true">PR</div>
+        <div><div class="tm-author-name">Priya R.</div><div class="tm-author-role">E-Commerce Brand</div></div>
+      </div>
+    </div>
+
+    <div class="tm-quote-card tm-quote-card-featured">
+      <div class="tm-quote-mark" aria-hidden="true">"</div>
+      <p class="tm-quote-text">I went from 2K to 48K followers in 4 months. Their strategy is unlike anything I've seen before.</p>
+      <div class="tm-quote-author">
+        <div class="tm-avatar tm-avatar-sm" style="background:linear-gradient(135deg,#4b3fff,#d4007a)" aria-hidden="true">AM</div>
+        <div><div class="tm-author-name">Arjun M.</div><div class="tm-author-role">Fitness Coach</div></div>
+      </div>
+    </div>
+
+    <div class="tm-quote-card">
+      <div class="tm-quote-mark" aria-hidden="true">"</div>
+      <p class="tm-quote-text">The ROI was immediate. Our DMs filled up with qualified leads after the very first batch of content.</p>
+      <div class="tm-quote-author">
+        <div class="tm-avatar tm-avatar-sm" style="background:linear-gradient(135deg,#ff3c2f,#d4007a)" aria-hidden="true">NK</div>
+        <div><div class="tm-author-name">Neha K.</div><div class="tm-author-role">Course Creator</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tm-stats-bar" role="list">
+    <div class="tm-stat" role="listitem"><div class="tm-stat-num">500<span>+</span></div><div class="tm-stat-label">Happy Clients</div></div>
+    <div class="tm-stat-divider" aria-hidden="true"></div>
+    <div class="tm-stat" role="listitem"><div class="tm-stat-num">98<span>%</span></div><div class="tm-stat-label">Retention Rate</div></div>
+    <div class="tm-stat-divider" aria-hidden="true"></div>
+    <div class="tm-stat" role="listitem"><div class="tm-stat-num">4.9<span>★</span></div><div class="tm-stat-label">Average Rating</div></div>
+    <div class="tm-stat-divider" aria-hidden="true"></div>
+    <div class="tm-stat" role="listitem"><div class="tm-stat-num">12<span>M+</span></div><div class="tm-stat-label">Views Generated</div></div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     FOOTER  (Drishyam-style layout)
+══════════════════════════════════════ -->
+<footer class="footer-section" aria-label="Footer">
+
+  <!-- BIG HEADLINE -->
+  <div class="footer-headline-wrap">
+    <h2 class="footer-headline">Ready to Make Your Brand Stand Out?</h2>
+  </div>
+
+  <!-- BODY: brand col + 3 nav columns -->
+  <div class="footer-body">
+
+    <!-- Left brand column -->
+    <div class="footer-brand">
+      <a href="index.html" class="footer-logo-mark">Drishyam<sup>®</sup></a>
+      <p class="footer-tagline">Crafting designs &amp; strategies<br>that help your brand shine online.</p>
+      <div class="footer-socials">
+        <!-- WhatsApp -->
+        <a href="#" class="footer-social-btn" aria-label="WhatsApp">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+        <!-- Instagram -->
+        <a href="#" class="footer-social-btn" aria-label="Instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <!-- LinkedIn -->
+        <a href="#" class="footer-social-btn" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Nav column 1 -->
+    <nav class="footer-nav-col" aria-label="Footer navigation column 1">
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Home</a></li>
+      </ul>
+    </nav>
+
+    <!-- Nav column 2 -->
+    <nav class="footer-nav-col" aria-label="Footer navigation column 2">
+      <ul>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Review</a></li>
+      </ul>
+    </nav>
+
+    <!-- Nav column 3 -->
+    <nav class="footer-nav-col" aria-label="Footer navigation column 3">
+      <ul>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Pricing</a></li>
+      </ul>
+    </nav>
+
+  </div>
+
+  <!-- DIVIDER -->
+  <div class="footer-divider" aria-hidden="true"></div>
+
+  <!-- COPYRIGHT BAR -->
+  <div class="footer-copy-bar">
+    <p class="footer-copy">© 2025 Drishyam Media Marketing Agency. All Rights Reserved.</p>
+    <ul class="footer-copy-links">
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Service</a></li>
+    </ul>
+  </div>
+
+</footer>
+
+
+<!-- ══════════════════════════════════════
+     JAVASCRIPT
+══════════════════════════════════════ -->
+<script src="js/pages/index.js"></script>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>

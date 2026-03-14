@@ -1,0 +1,435 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Drishyam Media — Client Reviews & Success Stories</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/pages/reviews.css"/>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════ NAV ══════════════════════════════════════ -->
+<nav class="site-nav" role="navigation" aria-label="Main navigation">
+  <a href="index.html" class="nav-logo">Drishyam<sup>®</sup></a>
+
+  <div class="nav-tabs" role="tablist">
+    <a href="index.html" class="nav-tab" role="tab">Home</a>
+
+    <div class="nav-dropdown" role="none">
+      <button class="nav-tab nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+        Portfolio
+        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="nav-dropdown-menu" role="menu">
+        <div class="nav-dropdown-menu-inner">
+          <a href="#" class="nav-dropdown-item" role="menuitem">Video Production</a>
+          <a href="graphic.html" class="nav-dropdown-item" role="menuitem">Graphic Designing</a>
+          <a href="#" class="nav-dropdown-item" role="menuitem">Web/App Development</a>
+        </div>
+      </div>
+    </div>
+
+    <a href="about.html"   class="nav-tab" role="tab">About</a>
+    <a href="reviews.html" class="nav-tab" role="tab">Reviews</a>
+    <a href="pricing.html" class="nav-tab" role="tab">Pricing</a>
+    <a href="blog.html"    class="nav-tab" role="tab">Blog</a>
+    <a href="contact.html" class="nav-tab" role="tab">Contact</a>
+  </div>
+
+  <div class="nav-right">
+    <a href="contact.html" class="btn-book">Book a Call</a>
+  </div>
+
+  <button class="nav-hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<!-- Mobile drawer -->
+<div class="mobile-nav-drawer" id="mobileDrawer" role="dialog" aria-modal="true">
+  <button class="drawer-close" id="drawerClose" aria-label="Close navigation menu">×</button>
+  <a href="index.html">Home</a>
+  <a href="#" class="drawer-group-label">Portfolio</a>
+  <a href="#" class="drawer-sub-item">Video Production</a>
+  <a href="#" class="drawer-sub-item">Graphic Designing</a>
+  <a href="#" class="drawer-sub-item">Website / App Development</a>
+  <a href="pricing.html">Services</a>
+  <a href="about.html">About</a>
+  <a href="reviews.html">Reviews</a>
+  <a href="blog.html">Blog</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="drawer-cta">Book a Call</a>
+</div>
+
+
+<!-- ══════════════════════════════════════ HERO ══════════════════════════════════════ -->
+<section class="reviews-hero" aria-label="Reviews hero section">
+  <div class="grain" aria-hidden="true"></div>
+  <div class="reviews-hero-content">
+    <h1>Hear it directly from our <span class="grad-text">clients</span></h1>
+    <p>Real stories from real people. Our testimonials reflect the satisfaction and success our clients have experienced working with us.</p>
+  </div>
+  
+  <div class="client-showcase">
+    <div class="client-photos-wrapper">
+      <div class="client-photo">
+        <div class="client-initial" style="background:linear-gradient(135deg,#4b3fff,#9b2fff)">RH</div>
+      </div>
+      <div class="client-photo">
+        <div class="client-initial" style="background:linear-gradient(135deg,#9b2fff,#d4007a)">SH</div>
+      </div>
+      <div class="client-photo">
+        <div class="client-initial" style="background:linear-gradient(135deg,#d4007a,#ff3c2f)">TK</div>
+      </div>
+      <div class="client-photo">
+        <div class="client-initial" style="background:linear-gradient(135deg,#ff3c2f,#9b2fff)">SM</div>
+      </div>
+      <div class="client-photo">
+        <div class="client-initial" style="background:linear-gradient(135deg,#4b3fff,#d4007a)">AK</div>
+      </div>
+      <div class="client-photo">
+        <div class="client-initial" style="background:linear-gradient(135deg,#9b2fff,#ff3c2f)">NF</div>
+      </div>
+      <div class="client-photo">
+        <div class="client-initial" style="background:linear-gradient(135deg,#d4007a,#4b3fff)">MJ</div>
+      </div>
+      <div class="client-photo">
+        <div class="client-initial" style="background:linear-gradient(135deg,#ff3c2f,#4b3fff)">PP</div>
+      </div>
+      <div class="client-photo">
+        <div class="client-initial" style="background:linear-gradient(135deg,#9b2fff,#d4007a)">LW</div>
+      </div>
+      <div class="client-photo">
+        <div class="client-initial" style="background:linear-gradient(135deg,#4b3fff,#ff3c2f)">DM</div>
+      </div>
+    </div>
+
+    <div class="client-stats">
+      <div class="stat-item">
+        <div class="stat-number">500+</div>
+        <div class="stat-label">Happy Clients</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">4.9★</div>
+        <div class="stat-label">Average Rating</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">98%</div>
+        <div class="stat-label">Retention Rate</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════ VIDEO TESTIMONIALS ══════════════════════════════════════ -->
+<section class="video-testimonials" aria-label="Video testimonials">
+  <div class="section-header">
+    <h2>Listen to our <span class="grad-text">clients</span></h2>
+    <p>Watch actual success stories. We'd love to hear how you turned content into authority.</p>
+  </div>
+
+  <div class="video-grid">
+    <!-- Featured video -->
+    <div class="video-card featured">
+      <div class="video-placeholder">
+        <div class="play-btn">
+          <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+        <div class="video-quote">
+          "These guys don't mess around. We saw results from month one. If you want to grow your business, look no further."
+          <div class="video-author">— Scott Henry, Content Creator</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Regular videos -->
+    <div class="video-card">
+      <div class="video-placeholder">
+        <div class="play-btn">
+          <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+        <div class="video-quote">
+          "Working with Drishyam was a game-changer. Their designs gave our brand a fresh identity."
+          <div class="video-author">— Rahul Sharma, Content Creator</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-placeholder">
+        <div class="play-btn">
+          <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+        <div class="video-quote">
+          "We design content that gets noticed, attracts followers, and builds your online presence."
+          <div class="video-author">— Thomas, Content Creator</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-placeholder">
+        <div class="play-btn">
+          <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+        <div class="video-quote">
+          "The ROI has been incredible. Our engagement tripled in just 3 months."
+          <div class="video-author">— Simon, Marketing Director</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-placeholder">
+        <div class="play-btn">
+          <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+        <div class="video-quote">
+          "Professional, creative, and always on time. Exactly what we needed."
+          <div class="video-author">— Priya Patel, Small Business Owner</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════ TEXT TESTIMONIALS ══════════════════════════════════════ -->
+<section class="text-testimonials" aria-label="Written testimonials">
+  <div class="section-header">
+    <h2>There's a Reason People are <span class="grad-text">Raving About Us</span></h2>
+    <p>Join the experts, doctors, and funders who've turned authenticity into growth. Your content should be working harder than you are.</p>
+  </div>
+
+  <div class="testimonial-carousel">
+    <div class="testimonial-track">
+      <div class="testimonial-card">
+        <p class="testimonial-quote">"We worked closely with you and through research you not only understand our industry, but enhanced our brand across multiple platforms in a way that connects with our customers."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">RS</div>
+          <div class="testimonial-info">
+            <h4>Rahul Sharma</h4>
+            <p>Content Creator</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <p class="testimonial-quote">"We already trusted your abilities, but you shattered our expectations. The clarity of messaging and visual appeal increased our engagement by 240% in three months."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">TK</div>
+          <div class="testimonial-info">
+            <h4>Thomas</h4>
+            <p>E-commerce Founder</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <p class="testimonial-quote">"The team brought our vision to life. They truly understand what works on social media and helped us build a brand people actually care about."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">SM</div>
+          <div class="testimonial-info">
+            <h4>Simon</h4>
+            <p>Marketing Director</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <p class="testimonial-quote">"Professional service from start to finish. They understood our goals and delivered beyond expectations. Our brand has never looked better."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">AK</div>
+          <div class="testimonial-info">
+            <h4>Anika Kumar</h4>
+            <p>Startup Founder</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <p class="testimonial-quote">"After months of struggling with inconsistent branding, Drishyam gave us the clarity and direction we needed. Results speak for themselves."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">MJ</div>
+          <div class="testimonial-info">
+            <h4>Michael Johnson</h4>
+            <p>Restaurant Owner</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════ CASE STUDY ══════════════════════════════════════ -->
+<section class="case-study" aria-label="Client success story">
+  <div class="case-study-container">
+    <div class="case-study-header">
+      <div class="case-study-badge">Client Success Story</div>
+      <h2 class="case-study-title">Nandani Farm's Growth <span class="grad-text">With Drishyam</span></h2>
+      <p class="case-study-description">From local recognition to online influence — here's how our collaboration helped Nandani Farm grow their digital presence and reach thousands of new customers.</p>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-icon">📱</div>
+        <div class="stat-number">0 → 12k</div>
+        <div class="stat-label">Instagram Followers</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon">👁️</div>
+        <div class="stat-number">340%</div>
+        <div class="stat-label">Engagement Increase</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon">💰</div>
+        <div class="stat-number">250%</div>
+        <div class="stat-label">Revenue Growth</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon">⏱️</div>
+        <div class="stat-number">6 Mo</div>
+        <div class="stat-label">Time to Results</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════ WHY CHOOSE US ══════════════════════════════════════ -->
+<section class="why-choose" aria-label="Why clients choose us">
+  <div class="section-header">
+    <h2>Why Our Clients <span class="grad-text">Keep Coming Back</span></h2>
+    <p>We don't just deliver projects — we build partnerships that drive real growth.</p>
+  </div>
+
+  <div class="why-grid">
+    <div class="why-card">
+      <div class="why-avatar">RS</div>
+      <p class="why-quote">"We worked closely with you and through research you not only understand our industry, but enhanced our brand across multiple platforms in a way that connects with our customers."</p>
+      <div class="why-author">Rahul Sharma</div>
+      <div class="why-role">Content Creator</div>
+    </div>
+
+    <div class="why-card">
+      <div class="why-avatar">NF</div>
+      <p class="why-quote">"The attention to detail is unmatched. Every design felt purposeful and strategic. We finally have a brand that stands out in our market."</p>
+      <div class="why-author">Nandani Farm</div>
+      <div class="why-role">Agricultural Business</div>
+    </div>
+
+    <div class="why-card">
+      <div class="why-avatar">TK</div>
+      <p class="why-quote">"Fast turnaround, creative solutions, and a team that actually listens. They took our rough ideas and turned them into a polished brand identity."</p>
+      <div class="why-author">Thomas</div>
+      <div class="why-role">E-commerce Founder</div>
+    </div>
+
+    <div class="why-card">
+      <div class="why-avatar">SM</div>
+      <p class="why-quote">"ROI-focused and data-driven. They didn't just make things look pretty — they made sure our content actually converted and grew our audience."</p>
+      <div class="why-author">Simon</div>
+      <div class="why-role">Marketing Director</div>
+    </div>
+
+    <div class="why-card">
+      <div class="why-avatar">PP</div>
+      <p class="why-quote">"As a small business owner, I needed someone who understood budget constraints without compromising quality. Drishyam delivered exactly that."</p>
+      <div class="why-author">Priya Patel</div>
+      <div class="why-role">Small Business Owner</div>
+    </div>
+
+    <div class="why-card">
+      <div class="why-avatar">AK</div>
+      <p class="why-quote">"They're more than a service provider — they're a strategic partner. Every piece of content is crafted with our business goals in mind."</p>
+      <div class="why-author">Anika Kumar</div>
+      <div class="why-role">Startup Founder</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════ CTA ══════════════════════════════════════ -->
+<section class="cta-section" aria-label="Call to action">
+  <div class="cta-content">
+    <h2>Let's Create Something <span class="grad-text">Amazing Together</span></h2>
+    <p>Have a project in mind? We'd love to hear from you. Reach out and let's start building your brand's next big story.</p>
+    <div class="cta-buttons">
+      <a href="contact.html" class="btn-primary">Book a Free Call</a>
+      <a href="pricing.html" class="btn-secondary">View Our Services</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════ FOOTER ══════════════════════════════════════ -->
+<footer class="footer-section" aria-label="Footer">
+  <div class="footer-headline-wrap">
+    <h2 class="footer-headline">Ready to Make Your Brand Stand Out?</h2>
+  </div>
+
+  <div class="footer-body">
+    <div class="footer-brand">
+      <a href="index.html" class="footer-logo-mark">Drishyam<sup>®</sup></a>
+      <p class="footer-tagline">Crafting designs & strategies<br>that help your brand shine online.</p>
+      <div class="footer-socials">
+        <a href="#" class="footer-social-btn" aria-label="WhatsApp">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+        <a href="#" class="footer-social-btn" aria-label="Instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="#" class="footer-social-btn" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <nav class="footer-nav-col" aria-label="Footer navigation column 1">
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </nav>
+    <nav class="footer-nav-col" aria-label="Footer navigation column 2">
+      <ul>
+        <li><a href="pricing.html">Service</a></li>
+        <li><a href="reviews.html">Review</a></li>
+      </ul>
+    </nav>
+    <nav class="footer-nav-col" aria-label="Footer navigation column 3">
+      <ul>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="footer-divider" aria-hidden="true"></div>
+
+  <div class="footer-copy-bar">
+    <p class="footer-copy">© 2025 Drishyam Media Marketing Agency. All Rights Reserved.</p>
+    <ul class="footer-copy-links">
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Service</a></li>
+    </ul>
+  </div>
+</footer>
+
+
+<!-- ══════════════════════════════════════ JS ══════════════════════════════════════ -->
+<script src="js/main.js"></script>
+<script src="js/pages/reviews.js"></script>
+
+</body>
+</html>
