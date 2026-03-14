@@ -8,19 +8,23 @@
 /* ─────────────────────────────────────────
    HERO
 ───────────────────────────────────────── */
-.contact-hero {
-  position: relative; overflow: hidden;
-  padding: 120px 48px 80px; text-align: center;
+.hero-wrapper {
+  position: relative;
 }
-.contact-hero::before {
+.hero-wrapper::before {
   content: ''; position: absolute; inset: 0; z-index: 0;
   background: radial-gradient(ellipse 90% 70% at 50% 0%,
     #2a1060 0%, #1a0838 35%, #0d0520 65%, #060008 100%);
 }
-.contact-hero::after {
+.hero-wrapper::after {
   content: ''; position: absolute; inset: 0; z-index: 0;
   background: radial-gradient(ellipse 60% 50% at 50% 0%,
     rgba(155,40,255,0.22) 0%, transparent 70%);
+}
+
+.contact-hero {
+  position: relative; overflow: hidden;
+  padding: 120px 48px 80px; text-align: center;
 }
 .contact-hero .grain {
   position: absolute; inset: 0; z-index: 1; opacity: 0.035;

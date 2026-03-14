@@ -8,19 +8,23 @@
 /* ─────────────────────────────────────────
    HERO BAND
 ───────────────────────────────────────── */
-.page-hero {
-  position: relative; overflow: hidden;
-  padding: 100px 48px 72px; text-align: center;
+.hero-wrapper {
+  position: relative;
 }
-.page-hero::before {
+.hero-wrapper::before {
   content: ''; position: absolute; inset: 0; z-index: 0;
   background: radial-gradient(ellipse 90% 70% at 50% 0%,
     #2a1060 0%, #1a0838 35%, #0d0520 65%, #060008 100%);
 }
-.page-hero::after {
+.hero-wrapper::after {
   content: ''; position: absolute; inset: 0; z-index: 0;
   background: radial-gradient(ellipse 60% 50% at 50% 0%,
     rgba(155,40,255,0.22) 0%, transparent 70%);
+}
+
+.page-hero {
+  position: relative; overflow: hidden;
+  padding: 100px 48px 72px; text-align: center;
 }
 .page-hero .grain {
   position: absolute; inset: 0; z-index: 1; opacity: 0.035;
@@ -192,7 +196,12 @@
    CAROUSEL SYSTEM
 ───────────────────────────────────────── */
 .carousel-wrap {
+  /* Break out of the .cat-block / .gallery-page container to span full viewport width.
+     calc(50% - 50vw): 50% = half of the containing block; 50vw = half viewport.
+     The difference is exactly the left offset needed to reach the viewport edge. */
   position: relative; overflow: hidden;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
   mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
   -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
 }
@@ -209,12 +218,13 @@
   to   { transform: translateX(-50%); }
 }
 
-.post-carousel .gallery-card     { width: calc((100vw - 96px - 36px) / 4); aspect-ratio: 1/1; }
-.thumb-carousel .gallery-card    { width: calc((100vw - 96px - 24px) / 3); aspect-ratio: 16/9; }
-.reel-carousel .gallery-card     { width: calc((100vw - 96px - 48px) / 5); aspect-ratio: 9/16; }
-.poster-carousel .gallery-card   { width: calc((100vw - 96px - 36px) / 4); aspect-ratio: 2/3; }
-.album-carousel .gallery-card    { width: calc((100vw - 96px - 48px) / 5); aspect-ratio: 1/1; }
-.brochure-carousel .gallery-card { width: calc((100vw - 96px - 36px) / 4); aspect-ratio: 3/4; }
+/* Card widths relative to full viewport (carousel is now 100vw wide) */
+.post-carousel .gallery-card     { width: calc((100vw - 36px) / 4); aspect-ratio: 1/1; }
+.thumb-carousel .gallery-card    { width: calc((100vw - 24px) / 3); aspect-ratio: 16/9; }
+.reel-carousel .gallery-card     { width: calc((100vw - 48px) / 5); aspect-ratio: 9/16; }
+.poster-carousel .gallery-card   { width: calc((100vw - 36px) / 4); aspect-ratio: 2/3; }
+.album-carousel .gallery-card    { width: calc((100vw - 48px) / 5); aspect-ratio: 1/1; }
+.brochure-carousel .gallery-card { width: calc((100vw - 36px) / 4); aspect-ratio: 3/4; }
 
 .post-carousel .carousel-track     { animation: carouselScroll 32s linear infinite; }
 .thumb-carousel .carousel-track    { animation: carouselScroll 38s linear infinite; }
@@ -469,7 +479,7 @@
   .post-carousel .gallery-card, .thumb-carousel .gallery-card,
   .reel-carousel .gallery-card, .poster-carousel .gallery-card,
   .album-carousel .gallery-card, .brochure-carousel .gallery-card {
-    width: calc((100vw - 64px - 48px) / 5);
+    width: calc((100vw - 48px) / 5);
   }
 }
 @media (max-width: 900px) {
@@ -483,18 +493,18 @@
   .post-carousel .gallery-card, .thumb-carousel .gallery-card,
   .reel-carousel .gallery-card, .poster-carousel .gallery-card,
   .album-carousel .gallery-card, .brochure-carousel .gallery-card {
-    width: calc((100vw - 48px - 36px) / 4);
+    width: calc((100vw - 36px) / 4);
   }
 }
 @media (max-width: 640px) {
   .gallery-page { padding: 48px 0 64px; }
   .cat-block { padding: 0 16px; margin-bottom: 60px; }
-  .cat-block .carousel-wrap { margin: 0 -16px; }
+  /* No carousel margin override needed — calc(50% - 50vw) handles all breakpoints */
   .cat-title { font-size: 22px; }
   .post-carousel .gallery-card, .thumb-carousel .gallery-card,
   .reel-carousel .gallery-card, .poster-carousel .gallery-card,
   .album-carousel .gallery-card, .brochure-carousel .gallery-card {
-    width: calc((100vw - 8px) / 3);
+    width: calc((100vw - 24px) / 3);
   }
   .cta-strip { padding: 60px 20px 72px; }
   .cta-strip-actions { flex-direction: column; }
@@ -508,7 +518,7 @@
   .post-carousel .gallery-card, .thumb-carousel .gallery-card,
   .reel-carousel .gallery-card, .poster-carousel .gallery-card,
   .album-carousel .gallery-card, .brochure-carousel .gallery-card {
-    width: calc((100vw - 4px) / 2);
+    width: calc((100vw - 12px) / 2);
   }
   .footer-body { grid-template-columns: 1fr; }
 }

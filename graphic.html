@@ -10,6 +10,11 @@
 </head>
 <body>
 
+<!-- ══════════════════════════════════════
+     HERO WRAPPER — gradient background spans behind both the nav and hero
+══════════════════════════════════════ -->
+<div class="hero-wrapper">
+
 <!-- ══════════════════════════════════════ NAV ══════════════════════════════════════ -->
 <nav class="site-nav" role="navigation" aria-label="Main navigation">
   <a href="index.html" class="nav-logo">Drishyam<sup>®</sup></a>
@@ -87,6 +92,7 @@
     <a href="#brochure"  class="filter-pill">Brochure</a>
   </div>
 </section>
+</div><!-- /.hero-wrapper -->
 
 
 <!-- ══════════════════════════════════════ GALLERY ══════════════════════════════════════ -->
@@ -111,148 +117,94 @@
   <section class="cat-block" id="posts" aria-label="Social Media Posts">
     <div class="cat-header">
       <h3 class="cat-title">Post</h3>
-      <span class="cat-count">16 cards</span>
+      <span class="cat-count">8 designs</span>
       <div class="cat-line" aria-hidden="true"></div>
     </div>
 
     <div class="carousel-wrap post-carousel" aria-label="Scrolling gallery">
       <div class="carousel-track" role="list">
+
         <div class="gallery-card" role="listitem" aria-label="Our Services post design">
-        <div class="card-img">
-          <div class="card-deco orb" style="background:radial-gradient(#4b3fff,transparent)"></div>
-          <div class="card-deco bars"><span></span><span></span></div>
-          <!-- Placeholder text design -->
-          <div style="position:absolute;z-index:2;top:20px;left:20px;font-size:clamp(11px,1.2vw,14px);font-weight:900;color:#fff;line-height:1.3;text-transform:uppercase;letter-spacing:0.05em">Our<br>Services</div>
+          <div class="card-img"><img src="assets/posts/post-1.jpg" alt="Our Services Post" loading="lazy"></div>
+          <div class="card-overlay"><span class="card-overlay-text">Our Services Post</span></div>
         </div>
-        <div class="card-overlay"><span class="card-overlay-text">Our Services Post</span></div>
-      </div>
 
-      <div class="gallery-card" role="listitem" aria-label="GAIA post design">
-        <div class="card-img">
-          <div class="card-deco orb" style="background:radial-gradient(#9b2fff,transparent)"></div>
-          <div style="position:absolute;z-index:2;top:50%;left:50%;transform:translate(-50%,-50%);font-size:clamp(16px,2vw,22px);font-weight:900;color:#fff;letter-spacing:0.12em;text-align:center">GAIA</div>
+        <div class="gallery-card" role="listitem" aria-label="GAIA post design">
+          <div class="card-img"><img src="assets/posts/post-2.jpg" alt="GAIA Brand Post" loading="lazy"></div>
+          <div class="card-overlay"><span class="card-overlay-text">GAIA Brand Post</span></div>
         </div>
-        <div class="card-overlay"><span class="card-overlay-text">GAIA Brand Post</span></div>
-      </div>
 
-      <div class="gallery-card" role="listitem" aria-label="Booked to Speak post design">
-        <div class="card-img">
-          <div class="card-deco orb" style="background:radial-gradient(#d4007a,transparent)"></div>
-          <div style="position:absolute;z-index:2;top:22px;left:20px;font-size:clamp(13px,1.4vw,17px);font-weight:900;color:#fff;line-height:1.2;text-transform:uppercase">BOOKED<br>TO SPEAK</div>
-          <div style="position:absolute;z-index:2;bottom:20px;left:20px;font-size:10px;font-weight:700;color:rgba(255,255,255,0.60);letter-spacing:0.08em;text-transform:uppercase">Guest Speaker</div>
+        <div class="gallery-card" role="listitem" aria-label="Booked to Speak post design">
+          <div class="card-img"><img src="assets/posts/post-3.jpg" alt="Booked to Speak" loading="lazy"></div>
+          <div class="card-overlay"><span class="card-overlay-text">Booked to Speak</span></div>
         </div>
-        <div class="card-overlay"><span class="card-overlay-text">Booked to Speak</span></div>
-      </div>
 
-      <div class="gallery-card" role="listitem" aria-label="Buccaneers post design">
-        <div class="card-img">
-          <div class="card-deco orb" style="background:radial-gradient(#ff3c2f,transparent)"></div>
-          <div style="position:absolute;z-index:2;top:20px;left:20px;font-size:clamp(10px,1.1vw,13px);font-weight:900;color:#ff3c2f;line-height:1.3;text-transform:uppercase;letter-spacing:0.04em">BUCCANEERS<br>HOMW GAMES</div>
+        <div class="gallery-card" role="listitem" aria-label="Buccaneers post design">
+          <div class="card-img"><img src="assets/posts/post-4.jpg" alt="Buccaneers Games" loading="lazy"></div>
+          <div class="card-overlay"><span class="card-overlay-text">Buccaneers Games</span></div>
         </div>
-        <div class="card-overlay"><span class="card-overlay-text">Buccaneers Games</span></div>
-      </div>
 
-      <div class="gallery-card" role="listitem" aria-label="Open House post design">
-        <div class="card-img">
-          <div class="card-deco orb" style="background:radial-gradient(#2a5060,transparent);opacity:0.7"></div>
-          <div style="position:absolute;z-index:2;top:22px;left:20px;font-size:clamp(16px,2vw,22px);font-weight:900;color:#fff;line-height:1.1;text-transform:uppercase">OPEN<br>HOUSE</div>
-          <div class="card-deco bars"><span style="background:rgba(255,255,255,0.15)"></span><span style="width:30%"></span></div>
+        <div class="gallery-card" role="listitem" aria-label="Open House post design">
+          <div class="card-img"><img src="assets/posts/post-5.jpg" alt="Open House Listing" loading="lazy"></div>
+          <div class="card-overlay"><span class="card-overlay-text">Open House Listing</span></div>
         </div>
-        <div class="card-overlay"><span class="card-overlay-text">Open House Listing</span></div>
-      </div>
 
-      <div class="gallery-card" role="listitem" aria-label="Fashion editorial post design">
-        <div class="card-img">
-          <div style="position:absolute;inset:0;background:linear-gradient(160deg,#0a1208,#162010)"></div>
-          <div style="position:absolute;z-index:2;bottom:22px;left:20px;font-size:10px;font-weight:800;letter-spacing:0.12em;color:rgba(255,255,255,0.55);text-transform:uppercase">Front Dinner / Aria</div>
+        <div class="gallery-card" role="listitem" aria-label="Fashion editorial post design">
+          <div class="card-img"><img src="assets/posts/post-6.jpg" alt="Fashion Editorial" loading="lazy"></div>
+          <div class="card-overlay"><span class="card-overlay-text">Fashion Editorial</span></div>
         </div>
-        <div class="card-overlay"><span class="card-overlay-text">Fashion Editorial</span></div>
-      </div>
 
-      <div class="gallery-card" role="listitem" aria-label="Acne Scars post design">
-        <div class="card-img">
-          <div class="card-deco orb" style="background:radial-gradient(#3a0018,transparent);opacity:0.8"></div>
-          <div style="position:absolute;z-index:2;top:50%;left:50%;transform:translate(-50%,-50%);font-size:clamp(12px,1.3vw,16px);font-weight:900;color:#fff;text-align:center;text-transform:uppercase;letter-spacing:0.06em;line-height:1.3">ACNE<br>SCARS</div>
+        <div class="gallery-card" role="listitem" aria-label="Acne Scars post design">
+          <div class="card-img"><img src="assets/posts/post-7.jpg" alt="Skincare Campaign" loading="lazy"></div>
+          <div class="card-overlay"><span class="card-overlay-text">Skincare Campaign</span></div>
         </div>
-        <div class="card-overlay"><span class="card-overlay-text">Skincare Campaign</span></div>
-      </div>
 
-      <div class="gallery-card" role="listitem" aria-label="Bright and Visible post design">
-        <div class="card-img">
-          <div class="card-deco orb" style="background:radial-gradient(#1a3060,transparent)"></div>
-          <div style="position:absolute;z-index:2;top:22px;left:20px;font-size:clamp(10px,1.1vw,13px);font-weight:900;color:#fff;line-height:1.4">Bright<br><span style="color:#6abaff">and Visible</span></div>
-          <div class="card-deco bars"><span></span><span style="width:35%"></span></div>
+        <div class="gallery-card" role="listitem" aria-label="Bright and Visible post design">
+          <div class="card-img"><img src="assets/posts/post-8.jpg" alt="Bright and Visible" loading="lazy"></div>
+          <div class="card-overlay"><span class="card-overlay-text">Bright and Visible</span></div>
         </div>
-        <div class="card-overlay"><span class="card-overlay-text">Bright and Visible</span></div>
-      </div>
-        <div class="gallery-card" aria-hidden="true" aria-label="Our Services post design">
-        <div class="card-img">
-          <div class="card-deco orb" style="background:radial-gradient(#4b3fff,transparent)"></div>
-          <div class="card-deco bars"><span></span><span></span></div>
-          <!-- Placeholder text design -->
-          <div style="position:absolute;z-index:2;top:20px;left:20px;font-size:clamp(11px,1.2vw,14px);font-weight:900;color:#fff;line-height:1.3;text-transform:uppercase;letter-spacing:0.05em">Our<br>Services</div>
-        </div>
-        <div class="card-overlay"><span class="card-overlay-text">Our Services Post</span></div>
-      </div>
 
-      <div class="gallery-card" aria-hidden="true" aria-label="GAIA post design">
-        <div class="card-img">
-          <div class="card-deco orb" style="background:radial-gradient(#9b2fff,transparent)"></div>
-          <div style="position:absolute;z-index:2;top:50%;left:50%;transform:translate(-50%,-50%);font-size:clamp(16px,2vw,22px);font-weight:900;color:#fff;letter-spacing:0.12em;text-align:center">GAIA</div>
+        <!-- Duplicate set for seamless infinite loop -->
+        <div class="gallery-card" aria-hidden="true">
+          <div class="card-img"><img src="assets/posts/post-1.jpg" alt="" loading="lazy"></div>
+          <div class="card-overlay"><span class="card-overlay-text">Our Services Post</span></div>
         </div>
-        <div class="card-overlay"><span class="card-overlay-text">GAIA Brand Post</span></div>
-      </div>
 
-      <div class="gallery-card" aria-hidden="true" aria-label="Booked to Speak post design">
-        <div class="card-img">
-          <div class="card-deco orb" style="background:radial-gradient(#d4007a,transparent)"></div>
-          <div style="position:absolute;z-index:2;top:22px;left:20px;font-size:clamp(13px,1.4vw,17px);font-weight:900;color:#fff;line-height:1.2;text-transform:uppercase">BOOKED<br>TO SPEAK</div>
-          <div style="position:absolute;z-index:2;bottom:20px;left:20px;font-size:10px;font-weight:700;color:rgba(255,255,255,0.60);letter-spacing:0.08em;text-transform:uppercase">Guest Speaker</div>
+        <div class="gallery-card" aria-hidden="true">
+          <div class="card-img"><img src="assets/posts/post-2.jpg" alt="" loading="lazy"></div>
+          <div class="card-overlay"><span class="card-overlay-text">GAIA Brand Post</span></div>
         </div>
-        <div class="card-overlay"><span class="card-overlay-text">Booked to Speak</span></div>
-      </div>
 
-      <div class="gallery-card" aria-hidden="true" aria-label="Buccaneers post design">
-        <div class="card-img">
-          <div class="card-deco orb" style="background:radial-gradient(#ff3c2f,transparent)"></div>
-          <div style="position:absolute;z-index:2;top:20px;left:20px;font-size:clamp(10px,1.1vw,13px);font-weight:900;color:#ff3c2f;line-height:1.3;text-transform:uppercase;letter-spacing:0.04em">BUCCANEERS<br>HOMW GAMES</div>
+        <div class="gallery-card" aria-hidden="true">
+          <div class="card-img"><img src="assets/posts/post-3.jpg" alt="" loading="lazy"></div>
+          <div class="card-overlay"><span class="card-overlay-text">Booked to Speak</span></div>
         </div>
-        <div class="card-overlay"><span class="card-overlay-text">Buccaneers Games</span></div>
-      </div>
 
-      <div class="gallery-card" aria-hidden="true" aria-label="Open House post design">
-        <div class="card-img">
-          <div class="card-deco orb" style="background:radial-gradient(#2a5060,transparent);opacity:0.7"></div>
-          <div style="position:absolute;z-index:2;top:22px;left:20px;font-size:clamp(16px,2vw,22px);font-weight:900;color:#fff;line-height:1.1;text-transform:uppercase">OPEN<br>HOUSE</div>
-          <div class="card-deco bars"><span style="background:rgba(255,255,255,0.15)"></span><span style="width:30%"></span></div>
+        <div class="gallery-card" aria-hidden="true">
+          <div class="card-img"><img src="assets/posts/post-4.jpg" alt="" loading="lazy"></div>
+          <div class="card-overlay"><span class="card-overlay-text">Buccaneers Games</span></div>
         </div>
-        <div class="card-overlay"><span class="card-overlay-text">Open House Listing</span></div>
-      </div>
 
-      <div class="gallery-card" aria-hidden="true" aria-label="Fashion editorial post design">
-        <div class="card-img">
-          <div style="position:absolute;inset:0;background:linear-gradient(160deg,#0a1208,#162010)"></div>
-          <div style="position:absolute;z-index:2;bottom:22px;left:20px;font-size:10px;font-weight:800;letter-spacing:0.12em;color:rgba(255,255,255,0.55);text-transform:uppercase">Front Dinner / Aria</div>
+        <div class="gallery-card" aria-hidden="true">
+          <div class="card-img"><img src="assets/posts/post-5.jpg" alt="" loading="lazy"></div>
+          <div class="card-overlay"><span class="card-overlay-text">Open House Listing</span></div>
         </div>
-        <div class="card-overlay"><span class="card-overlay-text">Fashion Editorial</span></div>
-      </div>
 
-      <div class="gallery-card" aria-hidden="true" aria-label="Acne Scars post design">
-        <div class="card-img">
-          <div class="card-deco orb" style="background:radial-gradient(#3a0018,transparent);opacity:0.8"></div>
-          <div style="position:absolute;z-index:2;top:50%;left:50%;transform:translate(-50%,-50%);font-size:clamp(12px,1.3vw,16px);font-weight:900;color:#fff;text-align:center;text-transform:uppercase;letter-spacing:0.06em;line-height:1.3">ACNE<br>SCARS</div>
+        <div class="gallery-card" aria-hidden="true">
+          <div class="card-img"><img src="assets/posts/post-6.jpg" alt="" loading="lazy"></div>
+          <div class="card-overlay"><span class="card-overlay-text">Fashion Editorial</span></div>
         </div>
-        <div class="card-overlay"><span class="card-overlay-text">Skincare Campaign</span></div>
-      </div>
 
-      <div class="gallery-card" aria-hidden="true" aria-label="Bright and Visible post design">
-        <div class="card-img">
-          <div class="card-deco orb" style="background:radial-gradient(#1a3060,transparent)"></div>
-          <div style="position:absolute;z-index:2;top:22px;left:20px;font-size:clamp(10px,1.1vw,13px);font-weight:900;color:#fff;line-height:1.4">Bright<br><span style="color:#6abaff">and Visible</span></div>
-          <div class="card-deco bars"><span></span><span style="width:35%"></span></div>
+        <div class="gallery-card" aria-hidden="true">
+          <div class="card-img"><img src="assets/posts/post-7.jpg" alt="" loading="lazy"></div>
+          <div class="card-overlay"><span class="card-overlay-text">Skincare Campaign</span></div>
         </div>
-        <div class="card-overlay"><span class="card-overlay-text">Bright and Visible</span></div>
-      </div>
+
+        <div class="gallery-card" aria-hidden="true">
+          <div class="card-img"><img src="assets/posts/post-8.jpg" alt="" loading="lazy"></div>
+          <div class="card-overlay"><span class="card-overlay-text">Bright and Visible</span></div>
+        </div>
+
       </div>
     </div>
   </section>
